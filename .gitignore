@@ -1,0 +1,16 @@
+/kattis/in.txt
+/kattis/out.txt
+/kattis/main.cpp
+/output/in.txt
+/output/notes.txt
+/output/out.txt
+/output/main.cpp
+/testrunner
+/.idea
+/cmake-build-debug
+/cmake-build-debug/*
+/kattis
+/output
+/kattis/*
+/output/*
+/testrunner/*
