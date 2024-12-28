@@ -1,4 +1,6 @@
-#include <iostream>
+#include "../library/io.hpp"
+
+using namespace io;
 
 class %ClassName% {
 public:
