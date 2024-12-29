@@ -1,6 +1,8 @@
 #ifndef RADIX_SORT_HPP
 #define RADIX_SORT_HPP
 
+#include "adhoc_utils.hpp"
+
 /**
  * References:
  *   - https://developer.download.nvidia.com/video/gputechconf/gtc/2020/presentations/s21572-a-faster-radix-sort-implementation.pdf
@@ -39,13 +41,7 @@ void radix_sort(std::vector<T>& to_sort, const int bits_per_pass = 10) {
   if (to_sort.empty()) {
     return;
   }
-  T _min = std::numeric_limits<T>::max();
-  T _max = std::numeric_limits<T>::lowest();
-  for (const T& key : to_sort) {
-    _min = std::min(_min, key);
-    _max = std::max(_max, key);
-  }
-
+  auto [_min, _max] = minimum_and_maximum(to_sort);
   // resembles count_sort [L-R+1] for freq table.
   // max number of bits to cover in each radix sort pass
   int keys_range_bits = log_two_approximate(_max - _min);
