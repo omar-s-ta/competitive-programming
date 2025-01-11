@@ -21,6 +21,7 @@
 #include <bitset>
 #include <bit>
 #include <set>
+#include <memory>
 
 namespace io {
 
