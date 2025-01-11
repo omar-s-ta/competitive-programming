@@ -22,6 +22,7 @@
 #include <bit>
 #include <set>
 #include <memory>
+#include <type_traits>
 
 namespace io {
 

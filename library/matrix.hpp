@@ -367,9 +367,10 @@ struct matrix {
     }
   }
 
-  friend std::istream& operator>>(std::istream& in, matrix<T>& mat) {
+  template<typename U>
+  friend std::istream& operator>>(std::istream& in, matrix<U>& mat) {
     assert(!mat.values.empty());
-    if (std::is_same<T, char>::value) {
+    if constexpr (std::is_same<T, char>::value) {
       for (int i = 0; i < mat.rows; i++) {
         std::string chars;
         in >> chars;
