@@ -23,6 +23,7 @@
 #include <set>
 #include <memory>
 #include <type_traits>
+#include <queue>
 
 namespace io {
 
