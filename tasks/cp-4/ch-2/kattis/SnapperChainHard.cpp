@@ -20,17 +20,11 @@ using namespace io;
  * will have this shape for every number n -> (2^n)-1 = (1<<n)-1
  *
  * So if after K snaps it reaches the above shape it should be 'ON', otherwise 'OFF'.
- *
- * The only special case is when n=1. You can figure this out easily.
  */
 class SnapperChainHard {
 public:
   void solveOne(const int ci, int n, int k) {
     out << "Case #" << ci << ": ";
-    if (n == 1) {
-      out << (k % 2 == 0 ? "OFF" : "ON") << '\n';
-      return;
-    }
     out << (((k % (1 << n)) == (1 << n) - 1) ? "ON" : "OFF") << '\n';
   }
 
