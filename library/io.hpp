@@ -24,6 +24,7 @@
 #include <memory>
 #include <type_traits>
 #include <queue>
+#include <stack>
 
 namespace io {
 
