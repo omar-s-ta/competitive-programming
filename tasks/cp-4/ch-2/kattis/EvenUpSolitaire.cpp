@@ -2,6 +2,10 @@
 
 using namespace io;
 
+/*
+ * Use 2 stacks or whatever `LIFO` data-structure you prefer.
+ * Make use of the fact that the order of the remaining cards does not change after an action.
+ */
 class EvenUpSolitaire {
 public:
   void solve() {
