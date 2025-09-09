@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 
 /*
  * Simulate greedy stacks that take the smallest 'Container' whenever
@@ -8,7 +8,7 @@
  * Eventually all small 'Container's are on the top of the stacks.
  */
 class problem {
-public:
+ public:
   void solve() {
     std::string coming;
     for (int ci = 1; in >> coming && coming != "end"; ci++) {
@@ -38,10 +38,9 @@ public:
     }
   }
 
-  problem(std::istream& in, std::ostream& out)
-    : in(in), out(out) { }
+  problem(std::istream& in, std::ostream& out) : in(in), out(out) {}
 
-private:
+ private:
   std::istream& in;
   std::ostream& out;
 
