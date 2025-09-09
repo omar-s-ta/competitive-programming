@@ -2,6 +2,11 @@
 #include <vector>
 #include <string>
 
+/*
+ * Simulate greedy stacks that take the smallest 'Container' whenever
+ * it can take one.
+ * Eventually all small 'Container's are on the top of the stacks.
+ */
 class problem {
 public:
   void solve() {
