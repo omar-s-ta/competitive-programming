@@ -9,11 +9,8 @@ public:
     for (int ci = 1; in >> coming && coming != "end"; ci++) {
       std::vector<short> stk(N, -1);
       short stacks = 0;
-      stk[coming.front() - 'A'] = stacks;
-      stacks += 1;
-
       const short containers = coming.length();
-      for (short i = 1; i < containers; i++) {
+      for (short i = 0; i < containers; i++) {
         const short container = coming[i] - 'A';
         if (stk[container] != -1) {
           continue;
