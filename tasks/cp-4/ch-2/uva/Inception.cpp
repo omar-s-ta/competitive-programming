@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+// Simple and straight-forward stack simulation.
 class problem {
  public:
   void solve() {
