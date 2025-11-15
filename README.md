@@ -7,7 +7,7 @@ throughout my journey in competitive programming. It includes efficient algorith
 data structures, and problem-solving techniques
 aimed at tackling various coding challenges.
 
-For `Rust` solutions, visit [this repo](https://github.com/omar-s-ta/rust-competitive-programming).
+For `Rust` solutions, visit [this repo](https://github.com/omar-s-ta/rust-solver).
 
 ## Repository Structure
 
